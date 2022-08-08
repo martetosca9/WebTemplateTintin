@@ -1,0 +1,334 @@
+@import url("../node_modules/bootstrap/scss/bootstrap.scss");
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right top, #279eaf, #21a2bc, #25a5c9, #31a7d6, #43a9e1, #43a7e8, #47a4ee, #51a0f3, #4998f6, #468ff8, #4986f9, #507cf9);;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Mouse Memoirs', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+color: #9acbff;
+}
+/*ESTO ES LO Q DICE CSSGrid TEMPLATE*/
+
+
+.container{ /*DIV ADENTRO DE HEADER, CONTIENE DIV.header-contenido*/
+    width: 100%;
+    margin:auto
+}
+
+img{
+    width: 100%;
+}
+
+.header-contenido{
+    position: relative;
+    z-index: 100;
+    justify-content: center;
+}
+
+.logo{
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 15px;
+    font-family: 'Lobster', cursive;
+    color: rgb(14, 14, 14);
+}
+
+a:hover{
+    color: #9acbff;
+}
+
+
+/*BANNER DEBAJO DE HEADER*/
+.banner{
+    height: 50vh;
+    position: relative;
+    background:rgba(0,0,0,0.3)url(../img/banner.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-descripcion{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    font-size: 70px;
+    background: -webkit-linear-gradient(#0555ac, #02161f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input{
+    background-color: #001730;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(215, 240, 250);
+}
+
+/*--------------ESTILO BUTTON Y BUTTON HOVER--------------*/
+button{
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: xx-large;
+    color: #001a36;
+}
+/*BUTTON Q DICE GITHUB*/
+.button1{
+    color: #9acbff;
+    transition: transform 0.3s ease;
+    background-color: #001a36;
+}
+.button1::after, .button1::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #001a36;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+/*BUTTON 1 HOVER*/
+.button1:hover{
+    transform: translate(-12px, -12px);
+}
+.button1:hover::after{
+    transform: translate(6px, 6px);
+}
+.button1:hover::before{
+    transform: translate(12px, 12px);
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(14, 14, 14);
+}
+
+/*Los (a) que están adentro del header (inicio, sobre nosotros, contacto)*/
+
+.a-logo{
+    padding: 10px;
+    font-size: xx-large;
+}
+.linkslogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+
+p.parrafo{
+    color: #001a36;
+    font-size: 25px;
+    padding: 5px;
+}
+
+/*PARRAFO IZQUIERDA:*/
+article{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding: 2em;
+    width: 40vw;
+    float: left;
+    text-align: start;
+    font-weight: bold;
+    height: 600px;
+}
+
+/*PARRAFO DERECHA*/
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding: 2em;
+    width: 40vw;
+    text-align: end;
+    float: right;
+    text-align: end;
+    font-weight: bold;
+    height: 600px;
+}
+
+
+
+
+
+/*FOOTER*/
+footer{
+    color: #001a36;
+    height: auto;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    display: flex;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0.3rem 0;
+}
+.socials li{
+    margin: 0.10px
+}
+.socials a{
+    text-decoration: none;
+    color: #001a36;
+    padding: 5px;
+    font-weight: lighter;
+}
+.socials a:hover{
+    color: #21a2bc;
+}
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/*ESTILOS DE "SOBRE NOSOTROS"-----------------------------*/
+.bannerSN{
+    height: 50vh;
+    position: relative;
+    background:rgba(0,0,0,0.3)url(../img/bannerSN.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: #001a36;
+}
+h1.h1SN{
+    font-size: 70px;
+    background: -webkit-linear-gradient(#007bff, #4dc2f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*seccion sobre nosotros --> debajo del banner*/
+
+section .bannerSN{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+/*div dentro de section class="sobre-nosotros"*/
+.containerSN{
+    text-align: center;
+    color: #001a36;
+    font-weight: bold;
+    position: relative;
+}
+
+.absoluteSN{
+    position: absolute;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding-left: 40%;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+p.parrafoSN{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*ESTILO DE CONTACTO.HTML*/
+.bannercontacto{
+    height: 50vh;
+    position: relative;
+    background:rgba(0,0,0,0.3)url(../img/bannerContacto.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1.contactoh1{
+    font-size: 70px;
+    background: -webkit-linear-gradient(#007bff, #8f4df8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+section.contactoform{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    color: #001a36;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 30px;
+}
+
+label{
+    padding: 5px;
+}
+input{
+    margin: 5px;
+}
+button.enviar{
+    padding: 4px;
+    margin: 5px;
+    background-color: #0555ac;
+    color: #9acbff;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 85px;
+}
